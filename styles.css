@@ -43,6 +43,13 @@ button {
   background-color: unset;
 }
 
+/* ### UTILITY CLASSES ### */
+
+.container {
+  width: 90%;
+  margin-inline: auto;
+}
+
 /* ### GENERAL STYLING ### */
 
 body {
