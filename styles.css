@@ -5,4 +5,35 @@
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
   --grey-200: hsl(0, 0%, 85%);
+  /* # TYPOGRAPHY # */
+  --ff-alata: "Alata", sans-serif;
+  --ff-josefin: "Josefin Sans", sans-serif;
+  --fw-400: 400;
+  --fw-300: 300;
+}
+
+/* ### CSS RESET ### */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+picture,
+img,
+svg {
+  max-width: 100%;
+  display: block;
 }
