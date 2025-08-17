@@ -449,4 +449,76 @@ footer .container {
     max-width: 50ch;
     line-height: 1.4;
   }
+
+  /* # CREATIONS # */
+  .creations-section {
+    padding-block: 6rem;
+    grid-template-areas:
+      "title title title link"
+      "earth-cell arcade-cell soccer-cell the-grid-cell"
+      "above-cell borealis-cell curiosity-cell fisheye-cell";
+    grid-template-columns: repeat(4, 256px);
+  }
+
+  .creations__title {
+    justify-self: start;
+  }
+
+  .creations__link {
+    justify-self: end;
+    margin-bottom: 1.5rem;
+  }
+
+  .bg-cell {
+    height: 440px;
+    padding-inline: 2.5rem;
+  }
+
+  .earth-cell {
+    grid-area: earth-cell;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+      url(./images/desktop/image-deep-earth.jpg);
+  }
+
+  .arcade-cell {
+    grid-area: arcade-cell;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+      url(./images/desktop/image-night-arcade.jpg);
+  }
+
+  .soccer-cell {
+    grid-area: soccer-cell;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+      url(./images/desktop/image-soccer-team.jpg);
+  }
+
+  .the-grid-cell {
+    grid-area: the-grid-cell;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+      url(./images/desktop/image-grid.jpg);
+  }
+
+  .above-cell {
+    grid-area: above-cell;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+      url(./images/desktop/image-from-above.jpg);
+  }
+
+  .borealis-cell {
+    grid-area: borealis-cell;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+      url(./images/desktop/image-pocket-borealis.jpg);
+  }
+
+  .curiosity-cell {
+    grid-area: curiosity-cell;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+      url(./images/desktop/image-curiosity.jpg);
+  }
+
+  .fisheye-cell {
+    grid-area: fisheye-cell;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+      url(./images/desktop/image-fisheye.jpg);
+  }
 }
