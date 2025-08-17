@@ -65,6 +65,10 @@ h3 {
   text-transform: uppercase;
   font-family: var(--ff-josefin);
 }
+
+button {
+  cursor: pointer;
+}
 /* ### HERO SECTION ### */
 
 .hero-section {
@@ -105,4 +109,41 @@ header .logo-container {
   padding: 1.2rem 1.5rem;
   font-size: 2.6rem;
   text-wrap: balance;
+}
+
+/* ### DIALOG ### */
+
+dialog {
+  /* position: fixed; */
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  top: 0;
+  width: 100%;
+  height: 650px;
+}
+
+dialog > * {
+  width: 90%;
+  margin-inline: auto;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2.4rem;
+}
+
+.mobile-nav {
+  margin-top: 10rem;
+}
+
+.mobile-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-family: var(--ff-josefin);
 }
