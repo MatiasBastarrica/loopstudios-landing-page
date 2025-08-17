@@ -274,3 +274,50 @@ dialog > * {
 .the-grid-cell h3 {
   max-width: 6ch;
 }
+
+/* ### FOOTER ### */
+
+footer {
+  background-color: var(--black);
+  color: var(--white);
+  padding-block: 3.5rem;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.ft-item .logo-container {
+  margin-bottom: 1.8rem;
+  width: 160px;
+  margin-inline: auto;
+}
+
+.ft-item nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.socials-container {
+  margin-bottom: 1rem;
+}
+
+.socials-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.socials-container + p {
+  text-align: center;
+  color: #7f7f7f;
+}
