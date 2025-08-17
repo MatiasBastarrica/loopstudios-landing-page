@@ -148,6 +148,30 @@ dialog > * {
   font-family: var(--ff-josefin);
 }
 
+header a,
+footer a {
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+header a::after,
+footer a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  width: 35px;
+  height: 2px;
+  background-color: var(--white);
+}
+
+header a:hover::after,
+footer a:hover::after {
+  display: block;
+}
+
 /* ### INTERACTIVE SECTION ### */
 
 .interactive-section {
@@ -254,6 +278,12 @@ dialog > * {
   font-size: 1rem;
 }
 
+.creations__link:hover {
+  background-color: var(--black);
+  color: var(--white);
+  cursor: pointer;
+}
+
 .bg-cell {
   height: 120px;
   display: flex;
@@ -263,11 +293,38 @@ dialog > * {
   background-size: cover;
   color: var(--white);
   font-size: 1.235rem;
+  position: relative;
+  z-index: 0;
+}
+
+.bg-cell::before {
+  position: absolute;
+  content: "";
+  display: none;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.563);
+  z-index: -1;
+}
+
+.bg-cell:hover {
+  cursor: pointer;
+}
+
+.bg-cell:hover::before {
+  display: block;
+}
+
+.bg-cell:hover h3 {
+  color: var(--black);
 }
 
 .bg-cell h3 {
   max-width: 10ch;
   text-wrap: balance;
+  z-index: 3;
 }
 
 .earth-cell h3,
@@ -320,4 +377,9 @@ footer .container {
 .socials-container + p {
   text-align: center;
   color: #7f7f7f;
+}
+
+.socials-container a {
+  display: inline-block;
+  padding-bottom: 0.8rem;
 }
