@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My Solution](https://your-solution-url.com)
+- Solution URL: [My Solution](https://www.frontendmentor.io/solutions/loopstudios-landing-page-mb-996pdFcqE6)
 - Live Site URL: [Live](https://matiasbastarrica.github.io/loopstudios-landing-page/)
 
 ## My process
