@@ -72,17 +72,18 @@ button {
 /* ### HERO SECTION ### */
 
 .hero-section {
-  background-image: url(./images/mobile/image-hero.jpg);
+  background: url(./images/mobile/image-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
+  padding-top: 2.4rem;
   color: var(--white);
+  min-height: 650px;
+  display: flex;
 }
 
 .hero-section .container {
   display: grid;
   grid-auto-rows: auto 1fr;
-  min-height: 650px;
 }
 
 .desktop-nav {
@@ -93,7 +94,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 2.4rem;
 }
 
 header .logo-container {
@@ -109,6 +109,7 @@ header .logo-container {
   padding: 1.2rem 1.5rem;
   font-size: 2.6rem;
   text-wrap: balance;
+  max-width: 18ch;
 }
 
 /* ### DIALOG ### */
@@ -382,4 +383,44 @@ footer .container {
 .socials-container a {
   display: inline-block;
   padding-bottom: 0.8rem;
+}
+
+/* ### MEDIA QUERIES ### */
+
+@media (min-width: 46.875em) {
+  .container {
+    width: 80%;
+  }
+
+  /* # HERO SECTION # */
+  .hero-section {
+    padding-top: 4rem;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(./images/desktop/image-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .hero-section .logo-container {
+    width: 192px;
+  }
+
+  .hero-section h1 {
+    font-size: 5rem;
+    max-width: 715px;
+  }
+
+  .nav-icon {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: block;
+  }
+
+  .desktop-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+  }
 }
