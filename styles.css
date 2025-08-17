@@ -168,3 +168,109 @@ dialog > * {
   color: #818181;
   font-size: 0.985rem;
 }
+
+/* ### CREATIONS SECTION ### */
+
+.creations-section {
+  display: grid;
+  grid-template-areas:
+    "title"
+    "earth-cell"
+    "arcade-cell"
+    "soccer-cell"
+    "the-grid-cell"
+    "above-cell"
+    "borealis-cell"
+    "curiosity-cell"
+    "fisheye-cell"
+    "link";
+  gap: 2rem;
+  padding-bottom: 6rem;
+}
+
+.creations__title {
+  grid-area: title;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.earth-cell {
+  grid-area: earth-cell;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url(./images/mobile/image-deep-earth.jpg);
+}
+
+.arcade-cell {
+  grid-area: arcade-cell;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url(./images/mobile/image-night-arcade.jpg);
+}
+
+.soccer-cell {
+  grid-area: soccer-cell;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url(./images/mobile/image-soccer-team.jpg);
+}
+
+.the-grid-cell {
+  grid-area: the-grid-cell;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url(./images/mobile/image-grid.jpg);
+}
+
+.above-cell {
+  grid-area: above-cell;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url(./images/mobile/image-from-above.jpg);
+}
+
+.borealis-cell {
+  grid-area: borealis-cell;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url(./images/mobile/image-pocket-borealis.jpg);
+}
+
+.curiosity-cell {
+  grid-area: curiosity-cell;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url(./images/mobile/image-curiosity.jpg);
+}
+
+.fisheye-cell {
+  grid-area: fisheye-cell;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url(./images/mobile/image-fisheye.jpg);
+}
+
+.creations__link {
+  grid-area: link;
+  font-size: 1.2rem;
+  text-align: center;
+  border: 2px solid var(--black);
+  padding: 0.6rem 2.8rem;
+  justify-self: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1rem;
+}
+
+.bg-cell {
+  height: 120px;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white);
+  font-size: 1.235rem;
+}
+
+.bg-cell h3 {
+  max-width: 10ch;
+  text-wrap: balance;
+}
+
+.earth-cell h3,
+.the-grid-cell h3 {
+  max-width: 6ch;
+}
